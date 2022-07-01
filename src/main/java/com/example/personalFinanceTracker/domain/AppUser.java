@@ -29,4 +29,5 @@ public class AppUser {
   private LocalDateTime updateDateTime;
 
 
+
 }

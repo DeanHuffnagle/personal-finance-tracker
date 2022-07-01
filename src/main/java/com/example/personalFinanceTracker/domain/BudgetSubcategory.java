@@ -3,7 +3,6 @@ package com.example.personalFinanceTracker.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.security.core.userdetails.User;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +14,7 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BudgetSubcatagory {
+public class BudgetSubcategory {
 
   @Id
   @GeneratedValue
@@ -23,5 +22,5 @@ public class BudgetSubcatagory {
   private String name;
   private Integer amount;
   @ManyToOne
-  private BudgetCatagory budgetCatagory;
+  private BudgetCategory budgetCatagory;
 }

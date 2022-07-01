@@ -33,5 +33,5 @@ public class Transaction {
   @ManyToOne
   private Account account;
   @ManyToOne
-  private BudgetSubcatagory budgetSubcatagory;
+  private BudgetSubcategory budgetSubcatagory;
 }

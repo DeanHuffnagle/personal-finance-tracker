@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.security.core.userdetails.User;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,6 +30,6 @@ public class Account {
   @UpdateTimestamp
   private LocalDateTime updateDateTime;
   @ManyToOne
-  private User user;
+  private AppUser user;
 
 }
